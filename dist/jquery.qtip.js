@@ -211,8 +211,10 @@ function QTip(target, options, id, attr)
 		if(button.jquery) {
 			if (button.parent()){
 			   elements.button = button.clone();
+			   console && console.log('cloned');
 			}else {
 			   elements.button = button;
+			   console && console.log('reused');
 			}
 		}
 		else {
