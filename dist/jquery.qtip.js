@@ -209,7 +209,7 @@ function QTip(target, options, id, attr)
 
 		// Use custom button if one was supplied by user, else use default
 		if(button.jquery) {
-			if (button.parent()){
+			if (button.parent().length){
 			   elements.button = button.clone();
 			   console && console.log('cloned');
 			}else {
